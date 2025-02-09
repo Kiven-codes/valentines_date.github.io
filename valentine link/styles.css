@@ -1,0 +1,92 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffe6e6;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.phone-container {
+    width: 375px;
+    height: 667px;
+    background-color: white;
+    border: 16px solid black;
+    border-radius: 36px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-container::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 5px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.phone-container::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+h1 {
+    color: #ff4d4d;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #e60000;
+    transform: scale(1.05);
+}
+
+#container img {
+    width: 80%;
+    max-width: 300px;
+    margin-top: 20px;
+}
